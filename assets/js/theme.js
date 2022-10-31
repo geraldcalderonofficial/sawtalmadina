@@ -317,7 +317,7 @@
 	// DOMReady event
 	$(function () {
 		init_layout();
-		//init_sticky_nav();
+		init_sticky_nav();
 		init_portfolio();
 		init_switch_buttons();
 		init_tabs();
