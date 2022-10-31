@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>MainDigitalStream Inc.</title>
+
+	<!-- Audio Player CSS & Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="http://69.4.230.156/FlashPlayer-V1/js/mediaelement-and-player.min.js"></script>
+	<link rel="stylesheet" href="http://69.4.230.156/FlashPlayer-V1/css/style3.css" media="screen">
+	<!-- end Audio Player CSS & Scripts -->
+
+	
+<meta name="robots" content="noindex,follow" />
+</head>
+
+<body>
+
+	<!-- Audio Player HTML -->
+	<div class="audio-player">
+
+
+		<h1><span id="cc_strinfo_title_soutalmadina" class="cc_streaminfo"></h1>
+                <h2><iframe width="300" height="20px" src="current.php" frameborder="0"></iframe></h2>
+                <!--<a href="#" id="cc_strinfo_trackbuyurl_soutalmadina" class="cc_streaminfo"><img id="cc_strinfo_trackimageurl_soutalmadina" class="cc_streaminfo" width="110"height="114"alt=""/></a>-->
+                <img class="cover" src="assets/img/logo.jpg" alt=""width="110"height="114"></a> 
+		<h3>Playing:</h3>
+                <h4><div style="width:500px;height:45px;position:relative;">
+                <div style="position:absolute; z-index:1;">
+                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="480"  height="125">
+                <param name="movie" value="http://69.4.230.156/FlashPlayer-V1/js/flashplayer-v1.swf" />
+                <param name="quality" value="high" />
+                <param name="wmode" value="transparent">
+                <embed src="http://69.4.230.156/FlashPlayer-V1/js/flashplayer-v1.swf" quality="high" type="application/x-shockwave-flash" width="500"height="45"
+wmode="transparent"pluginspage="http://www.macromedia.com/go/getflashplayer" />
+                </object>
+                </div>
+                <div style="position:relative; z-index:2;">
+                </div></div></h4>
+                <a href="mailto:info@sawtalmadina.com"><img class="mm" src="http://69.4.230.156/FlashPlayer-V1/img/mm.png" alt="Email Us"title="Email Us"></a>
+                <a href="https://www.facebook.com/RadioSwtAlmdynaMisurata" target="_blank"><img class="ff" src="http://69.4.230.156/FlashPlayer-V1/img/ff.png" alt="Share Facebook"title="Share on Facebook"></a> 
+                <a href="https://twitter.com/"target="_blank"><img class="tt" src="http://69.4.230.156/FlashPlayer-V1/img/tt.png" alt="Share Twitter"title="Share on Twitter"></a> 
+		<audio id="audio-player" src="http://173.193.205.96:8164/;stream.nsv"type="audio/mp3" controls="controls" autoplay="true"></audio>
+               </div>
+               <script>
+		$(document).ready(function() {
+			$('#audio-player').mediaelementplayer({
+				alwaysShowControls: true,
+				features: ['playpause','volume','progress'],
+				audioVolume: 'horizontal',
+				audioWidth: 400,
+				audioHeight: 120
+			});
+		});
+	</script>
+
+
+	<!-- end Audio Player HTML -->
+<script language="javascript" type="text/javascript" src="http://173.193.205.96:2199/system/streaminfo.js"></script>
+</body>
+
+</html>
